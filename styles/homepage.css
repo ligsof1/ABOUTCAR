@@ -1,0 +1,288 @@
+body {
+    margin: 0px;
+}
+.homepage-default {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+
+}
+.homepage-header{
+    display: flex;
+    align-items: center;
+}
+.homepage-header-logo {
+    height: 56px;
+}
+
+.homepage-header-language {
+    display: flex;
+    align-items: center;
+    border-radius: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.homepage-header-language p{
+    padding-right: 0.5em;
+}
+
+.homepage-header-language:hover{
+    background-color: rgba(230, 230, 230, 0.5);
+    cursor: url('/imgs/Pointer.png'), pointer;
+}
+.homepage-header-search{
+    margin-left: 1.1em;
+    box-sizing:border-box ;
+}
+
+.homepage-header-search:hover {
+    box-shadow: 0px 10px 0px -1px rgba(255, 189, 48, 1);
+    cursor: pointer;
+    cursor: url('/imgs/Pointer.png'), pointer;
+}
+
+.homepage-header-sales:hover {
+    box-shadow: 0px 10px 0px -1px rgba(255, 189, 48, 1);
+    cursor: pointer;
+    cursor: url('/imgs/Pointer.png'), pointer;
+}
+
+.homepage-header-text {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.homepage-header-language{
+    margin-right: 8px;
+    height: 36px;
+}
+
+.homepage-header-language p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.language {
+   padding-right: 5px;
+   padding-left: 8px;
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -45px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    width: 180px;
+    max-height: 322px; /* Ограничение высоты */
+    overflow-y: auto; /* Скролл при превышении высоты */
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-size: 14px;
+}
+
+.language-dropdown li {
+    padding: 8px 12px;
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.language-dropdown li:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+.language-search {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.language-search input {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-size: 14px;
+}
+
+.homepage-header-search-log {
+    padding-right: 1em;
+}
+
+.homepage-header-search-log button{
+    background-color: white;
+    border: solid 1px black;
+    padding: 0px;
+    border-radius: 1px;
+}
+
+.homepage-header-search-log button p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 8px 16px 8px 16px;
+}
+
+.homepage-header-search-register {
+    padding-right: 1em;
+}
+
+.homepage-header-search-register button{
+    background-color: rgb(0, 0, 0);
+    border: solid 1px black;
+    padding: 0px;
+    border-radius: 1px;
+}
+.strelka {
+    margin-right: 8px;
+}
+
+.homepage-header-search-register button p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 8px 16px 8px 16px;
+    color: white;
+}
+
+
+/* __________________________________________________________________________________________ */
+.homepage {
+    padding-top: 2.35em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/imgs/homepageback.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center ;
+}
+.homepage-text {
+    display: flex;
+    height: 5em;
+    width: 35.7em;
+}
+.homepage-text-img {
+    height: 5em;
+}
+.homepage-text-info {
+    background-color: white;
+    height: 5em;
+}
+
+.homepage-search {
+    width: 35.7em;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(219, 219, 219, 0.548);
+    backdrop-filter: blur(10px);
+}
+
+.homepage-search-input {
+    background-color: white;
+}
+
+.homepage-search-input input {
+    height: 1.8em;
+    width: 19em;
+    border: none;
+    padding: 0;
+    margin: 0px -20px 0px 20px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    outline: none;
+}
+
+.homepage-search-input button {
+    height: 2.8em;
+    width: 6em;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 189, 48, 1);
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+.homepage-text-1 {
+    padding-top: 1em;
+}
+.homepage-text-2 {
+    padding-top: 0.5em;
+}
+.homepage-text-info p {
+    font-family: "inter";
+    padding: 20px 24px 20px 24px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+
+
+/* ________________________________________________________________________________ */
+
+
+
+Footer {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5em;
+    background-color: rgba(39, 39, 39, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.homepage-footer-social {
+    display: flex;
+    gap: 1em;
+    padding-left: 2em;
+}
+.homepage-footer-payment {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-right: 2em;
+}

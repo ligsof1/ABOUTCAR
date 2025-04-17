@@ -182,15 +182,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("imgs/homepageback.jpg");
+    background: url("/imgs/homepageback.jpg");
     background-size: cover;
     height: 100vh;
     background-position: center ;
 }
 
-.homepage {
-    background: url("imgs/homepageback.jpg");
-}
 .homepage-text {
     display: flex;
     height: 5em;
